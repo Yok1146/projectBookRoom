@@ -1,0 +1,613 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100&family=Thasadith:ital@1&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: max-content;
+    background-color: #fffaf2;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100vw;
+    height: 110px;
+    background-color: rgb(85, 77, 201);
+    display: flex;
+    position: relative;
+}
+header i{
+    font-size: 100px;
+    margin-left: 2%;
+    margin-right: 7%;
+    color: orange;
+}
+header a{
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+
+/* ส่วน Menu ด้านซ้าย */
+.menu{
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(85, 77, 201);
+}
+.header_menu{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-decoration: none;
+}
+.header_menu .room_manage{
+    margin-left: 5%;
+    width: 90%;
+    padding: 10px 0 0;
+    height: 35%;
+    display: flex;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    flex-direction: column;
+}
+.header_menu .user_manage{
+    margin-left: 5%;
+    width: 90%;
+    padding: 10px 0 0;
+    height: 40%;
+    display: flex;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    flex-direction: column;
+}
+.header_menu  .report{
+    margin-left: 5%;
+    width: 90%;
+    padding: 10px 0 0;
+    height: 30%;
+    display: flex;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    flex-direction: column;
+}
+.header_menu a{
+    font-family: 'Prompt', sans-serif;
+    text-decoration: none;
+    color: white;
+    line-height: 25px;
+}
+.header_menu a:hover{
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+}
+.header_menu h3{
+    font-family: 'Thasadith', sans-serif;
+    background-color: rgb(109, 102, 199);
+    padding: 5px 20px;
+}
+.menu a i{
+    color: red;
+}
+
+
+/* container */
+.container{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.content{
+    position: relative;
+    background-color: aqua;
+    width: 85%;
+    height: 100%;
+}
+
+
+
+/* Manage_room */
+
+
+
+
+/* Manage_users */
+.user_room{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(7,12%);
+    column-gap: 3px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Manage_users{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.room{
+    border: 1px solid black;
+    height: 100px;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.room_dafault{
+    position: relative;
+    border: 1px solid black;
+    height: 100px;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.user_table{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center; 
+}
+.user_table table {
+    border-collapse: collapse;
+    width: 80%;
+}
+  
+.user_table th,.user_table td {
+    text-align: left;
+    padding: 8px;
+    height: 10px;
+}
+  
+.user_table tr:nth-child(even){background-color: #f2f2f2}
+  
+.user_table th {
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/* edite_users */
+.edite_users{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_user{
+    width: 70%;
+    height: 90%;
+    background-color: aqua;
+    border-radius: 10px 10px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    border: 0.1px solid rgba(0,0,0,0.5);
+}
+.form_user form:first-child{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(109, 102, 199);
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+.form_user form:first-child button{
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 50%;
+    padding: 5px 10px;
+    transform: scale(1);
+    background-color: rgb(216, 66, 66);
+    cursor: pointer;
+    color: white;
+}
+.form_user form:first-child button:hover{
+    transform: scale(0.9);
+}
+
+
+.form_user form:last-child{
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 50px;
+    margin: 0;
+}
+.form_user form:last-child{
+    font-size: 20px;
+}
+.div_form1{
+    width: 90%;
+    display: flex;
+    line-height: 10px;
+    list-style: none;
+}
+.div_form1 select{
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.div_form2{
+    width: 90%;
+    display: flex;
+    list-style: none;
+}
+.div_form2 input{
+    width: 30%;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+}
+.div_form3{
+    width: 90%;
+    display: flex;
+}
+.div_form3 input{
+    width: 20%;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+}
+
+
+/* insert_content */
+.insert_content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    top: 0;
+    left: 0;
+}
+.data_user{
+    position: relative;
+    margin: 2% 0 0;
+    padding: 10px;
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(3,33.33%);
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+}
+.inroomuser,.bookinguser,.olduser{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.item_user_show{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.inroomuser i,.bookinguser i,.olduser i{
+    width: 40%;
+    padding-left: 10%;
+    font-size: 5rem;
+    color: rgba(0,0,0,0.5);
+}
+
+.content_user{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    margin-top: 2%;
+    display: flex;
+}
+.inroom_show{
+    width: 65%;
+    margin: 1%;
+    height: 99%;
+    overflow-y: auto;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+}
+.inroom_show a{
+    color: red;
+    text-decoration: none;
+}
+.inroom_show a:hover{
+    color: yellow;
+    text-shadow: 0px 0px 5px yellow;
+}
+.inroom_show h1,.booking_show a{
+    color: green;
+    text-decoration: none;
+}
+.inroom_show h1,.booking_show a:hover{
+    color: red;
+    text-shadow: 0px 0px 5px red;
+}
+.inroom_show h1,.booking_show h1,.old_show h1{
+    padding: 5px;
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+.inroom_show .table,.booking_show .table,.old_show .table{
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    min-height: 80%;
+    margin-left: 2.5%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: auto;
+}
+.table td{
+    padding: 4px;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+}
+.table table tbody tr{
+    background-color: rgba(218, 218, 218, 0.5);
+}
+
+
+.right_show{
+    width: 33%;
+    margin: 1%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+}
+.booking_show,.old_show{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 43%;
+    margin-bottom: 3%;
+}
+
+
+
+/* ค่าน้ำ-ค่าไฟ */
+.cost_cotent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 228, 228);
+}
+.cost_cotent  .costs_content{
+    width: 95%;
+    height: 95%;
+    background-color: wheat;
+}
+.room_cost_show{
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    width: 85%;
+    height: 60%;
+    margin: 0 auto;
+    top: 0;
+    background-color: rgb(228, 228, 228);
+    z-index: 900;
+}
+.room_cost_table{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: white;
+    /* border-radius: 10px 10px 0 0; */
+    border: 2px solid black;
+}
+.room_cost_table table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.room_cost_table table td{
+    width: max-content;
+    padding: 15px 10px;
+    border-bottom:1px solid rgba(139, 255, 145, 0.6);
+}
+.room_cost_table table thead td{
+    background-color: rgba(255, 82, 82, 0.87);
+}
+
+
+
+.room_cost_show_form{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid black;
+}
+.room_cost_show_form form{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.room_cost_show_form form label{
+    font-size: 18px;
+    /* line-height: 10px; */
+    padding: 5px;
+    margin: 0 0 20px;
+    width: 70%;
+    background-color: rgb(175, 175, 175);
+}
+.room_cost_show_form form input{
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+    outline: none;
+}
+.room_cost_show_form form button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #25da15;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.box input{
+    width: 80%;
+    margin-left: 5%;
+    padding: 5px;
+}
+
+
+.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 500;
+}
+.img a{
+    position: absolute;
+    cursor: pointer;
+    z-index: 500;
+    top: 5%;
+    right: 5%;
+    color: white;
+    font-size: 2rem;
+}
+
+
+.button{
+    text-decoration: none;
+    padding: 3px 5px;
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#slip{
+    cursor: pointer;
+}
+
+/* พิเศษใส่ไข่ */
+.success{
+    color: #25da15;
+    text-shadow: 0px 0px 10px #43eb34;
+}
+.delete{
+    color: red;
+    text-shadow: 0px 0px 10px rgb(253, 41, 33);
+}
+.search{
+    color: blue;
+    text-shadow: 0px 0px 10px rgb(33, 84, 253);
+}
+.hidden{
+    display: none;
+}
+.red{
+    background-color: red;
+}
+.orangered{
+    background-color: orangered;
+}
+
+
+.div{
+    display: none;
+    transition: display 5s ease-in-out;
+}
+
+.deposit{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.deposit table{
+    border-collapse: collapse;
+}
+.deposit table thead td{
+    padding: 10px 0;
+    background-color: rgb(124, 124, 255);
+}
+.deposit a{
+    padding: 3px 10px;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reportout{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+}

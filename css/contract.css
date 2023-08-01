@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(177, 109, 255);
+}
+.content{
+    width: 60%;
+    padding: 3%;
+    font-size: 18px;
+    /* border: 3px double black; */
+    border-bottom: 5px solid black;
+    line-height: 30px;
+    background-color: white;
+}
+.content p{
+    border: 2px solid black;
+    padding: 10px;
+}
+.check{
+    position: relative;
+    width: 60%;
+    padding: 20px 50px;
+    font-size: 18px;
+    /* border: 3px double black; */
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.check form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.check form button{
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.box input{
+    margin: 0 20px 0 0;
+    /* padding: 10px 20px; */
+}
+.flex{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: 5px 0;
+    padding: 10px;
+    /* justify-content: center; */
+}
+.boxs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 50%;
+    margin: 5px 0;
+    justify-content: center;
+    align-items: center;
+}
+.boxs:nth-child(5),.boxs:nth-child(9){
+    width: 83%;
+    /* background-color: red; */
+    justify-content: left;
+    /* background-color: red; */
+    padding: 10px 0px;
+    grid-template-columns: 150px 81%;
+}
+.boxs:nth-child(5) input,.boxs:nth-child(9) input{
+    width: 100%;
+}
+.ahref{
+    /* position: absolute; */
+    top: 10px;
+    right: 10px;
+    padding: 3px 15px;
+    background-color: rgb(255, 56, 56);
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    margin: 0 10px 0 0;
+}
+
+.colum{
+    display: flex;
+}
